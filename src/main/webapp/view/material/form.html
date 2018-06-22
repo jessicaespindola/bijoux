@@ -1,0 +1,36 @@
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+      <h1 class="h2">Novo Material</h1>
+    </div>
+
+    <form>
+        <div class="form-group col-md-6">
+	<label for="codigo">Código</label>
+        <input type="text" ng-class="{'is-invalid': vm.error.codigo}" ng-model="vm.registro.codigo" class="form-control" id="codigo" placeholder="Digite o código do material">
+        <small ng-if="vm.error.codigo" class="invalid-feedback">
+            {{vm.error.codigo[1]}}
+        </small>
+	</div>
+        
+        <div class="form-group col-md-6">
+        <label for="descricao">Nome material</label>
+        <input type="text" ng-class="{'is-invalid': vm.error.descricao}" ng-model="vm.registro.descricao" class="form-control" id="descricao" placeholder="Digite o nome do material">
+        <small ng-if="vm.error.descricao" class="invalid-feedback">
+            {{vm.error.descricao[1]}}
+        </small>
+	</div>
+	
+        
+	<div class="form-group col-md-6">
+        <label for="tipo">Tipo material</label>
+        <input type="text" ng-class="{'is-invalid': vm.error.tipo}" ng-model="vm.registro.tipo" class="form-control" id="tipo" placeholder="Digite o tipo do material">
+        <small ng-if="vm.error.tipo" class="invalid-feedback">
+            {{vm.error.tipo[1]}}
+        </small>
+	</div>
+	
+	
+        <button type="button" ng-click="vm.salvar()" class="btn btn-primary">Salvar</button>
+        <a ui-sref="materialList" class="btn btn-danger">Cancelar</button>
+</form>
+
+        

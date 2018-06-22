@@ -1,0 +1,105 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Bijoux</title>
+
+
+  <!-- Bootstrap core CSS -->
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/feather-font/css/iconfont.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar-bonito fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Bijoux</a>
+
+
+    <!-- User Info-->
+    <!-- <div class="sidenav-header-inner text-center"><img src="./banner/download.jpg" alt="person" class="img-fluid rounded-circle">-->
+  </nav>
+  <!-- Icon Cards-->
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+
+
+
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <ng-include src="'view/menu.html'"></ng-include>
+      </nav>
+
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <!-- Card Columns Example Social Feed-->
+
+
+        <ui-view></ui-view>
+      </main>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js">')
+  </script>
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/angular.min.js"></script>
+  <script src="assets/js/vendor/angular-locale_pt-br.js"></script>
+  <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script src="https://unpkg.com/sweetalert2@7.20.1/dist/sweetalert2.all.js"></script>
+
+
+  <!-- JS do codigo da Aplicação -->
+  <script src="app/module.js"></script>
+  <script src="app/dialog.builder.service.js"></script>
+
+  <script src="app/clientes/cliente.list.controller.js"></script>
+  <script src="app/clientes/cliente.form.controller.js"></script>
+  <script src="app/clientes/cliente.service.js"></script>
+  <script src="app/pecas/peca.list.controller.js"></script>
+  <script src="app/pecas/peca.form.controller.js"></script>
+  <script src="app/pecas/peca.service.js"></script>
+  <script src="app/carrinho/carrinho.list.controller.js"></script>
+  <script src="app/carrinho/carrinho.form.controller.js"></script>
+  <script src="app/carrinho/carrinho.service.js"></script>
+  <script src="app/material/material.list.controller.js"></script>
+  <script src="app/material/material.form.controller.js"></script>
+  <script src="app/material/material.service.js"></script>
+
+</body>
+
+
+<!--Icons 
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"> -->
+<!--<script>
+    // <script>
+    //  feather.replace()
+    //<script>-->
+
+
+</html>
